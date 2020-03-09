@@ -5,6 +5,7 @@
 <section class="container section-nouvelle">
         <?php
         $query = new WP_Query( array( 'category_name' => "atelier",
+        'posts_per_page' => 16,
         'order' => 'ASC'
         ));
         if ( $query->have_posts() ) {

@@ -15,11 +15,23 @@
                     $trouve   = '-';
                     $pos = strpos($mystring, $trouve);
                     $subtr = substr($heure,($pos + 1));
-                    if($subtr == "08"){
-                        $subtr = 8;
+                    switch ($subtr) {
+                        case "08":
+                            $subtr = 2;
+                            break;
+                        case "10":
+                            $subtr = 4;
+                            break;
+                        case "13":
+                            $subtr = 7;
+                            break;
+                        case "15":
+                            $subtr = 9;
+                            break;
                     }
-                    echo $subtr;
-					?><div class="div-atelier"class = "structure-atelier">
+                    echo $subtr; 
+                    $heure = "grid-row-start:" . $subtr;
+					?><div style='<?php echo $heure ?>' class = "structure-atelier">
                         <?php
                             echo '<p class="p-tittle"><a href="'.get_permalink( $id ).'">' . get_the_title() . "___" . "<span class='span-1'>" . get_post_field('post_name') . "</span>" . "___" . "<span class='span-2'>" . get_the_author_meta( 'display_name', $post->post_author )   . "</span>" . '</a></p>';
                         ?>

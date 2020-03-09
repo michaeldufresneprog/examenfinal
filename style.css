@@ -144,6 +144,13 @@ a {
   font-weight: bold;
 }
 
+.section-nouvelle {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25% [col-start])[4];
+      grid-template-columns: repeat(4, 25% [col-start]);
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/

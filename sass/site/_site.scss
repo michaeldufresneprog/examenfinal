@@ -49,3 +49,7 @@ a:hover{
 a{
     font-weight: bold;
 }
+.section-nouvelle{
+    display: grid;
+    grid-template-columns: repeat(4, 25% [col-start]);
+}

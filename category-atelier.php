@@ -50,10 +50,10 @@
                     $array = ["Luna","Eddy","Derick","Maybell"];
                     $style = "title-name title-name" . $compte;
                     $texte =  "<div class=' . $style . '>" . $array[$compte] . "</div>";
-                    $lunch = "<div class=' . $style . '>" . $array[$compte] . "</div>";
+                    $lunch = "<div style='grid-row-start:6' class=' . $style . '>LUNCH</div>";
                     if($compte <= 3){
                         echo $texte;
-                      
+                        echo $lunch;
                     }
                     $compte ++;
                     $couleur = $couleur + 10;

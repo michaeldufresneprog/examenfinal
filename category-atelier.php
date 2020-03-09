@@ -10,6 +10,7 @@
         ));
         if ( $query->have_posts() ) {
             $compte = 0;
+            $couleur = 0;
             while ( $query->have_posts() ) {
                     $query->the_post();
                     $heure = get_post_field('post_name');
@@ -48,10 +49,11 @@
                     }
                     $array = ["Luna","Eddy","Derick","Maybell"];
                     $texte =  "<div class='title-name'>" . $array[$compte] . "</div>";;
-                    if($compte <= 4){
+                    if($compte <= 3){
                         echo $texte;
                     }
                     $compte ++;
+                    $couleur = $couleur + 10;
                     $position = "grid-column-start:" . $position;
                     $heure = "grid-row-start:" . $subtr . ";";
 					?><div style='<?php echo $heure .  $position ?>' class = "structure-atelier">

@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<p class='container'>Git,Sass,Grid,Thème WP</p>
 <h1 class="container"></h1>
 <section class="container section-nouvelle">
         <?php

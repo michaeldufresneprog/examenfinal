@@ -6,6 +6,8 @@
 --------------------------------------------------------------*/
 @import "primary/posts-and-pages";
 
+$couleur:green;
+$texteC:white;
 
 a{
     color: black;
@@ -58,11 +60,27 @@ a{
     border: 2px solid black;
     text-align: left;
     padding-left: 10px;
+    text-align: center;
 }
 .title-name{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lighten(green, 30);
     font-size: 1.5em;
+}
+.title-name0{
+    background-color: lighten($couleur, 0);
+    color:darken($texteC, 0);
+}
+.title-name1{
+    background-color: lighten($couleur, 10);
+    color:darken($texteC, 20);
+}
+.title-name2{
+    background-color: lighten($couleur, 20);
+    color:darken($texteC, 40);
+}
+.title-name3{
+    background-color: lighten($couleur, 30);
+    color:darken($texteC, 60);
 }

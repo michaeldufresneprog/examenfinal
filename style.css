@@ -157,6 +157,7 @@ a {
   border: 2px solid black;
   text-align: left;
   padding-left: 10px;
+  text-align: center;
 }
 
 .title-name {
@@ -169,8 +170,27 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #1aff1a;
   font-size: 1.5em;
+}
+
+.title-name0 {
+  background-color: green;
+  color: white;
+}
+
+.title-name1 {
+  background-color: #00b300;
+  color: #cccccc;
+}
+
+.title-name2 {
+  background-color: #00e600;
+  color: #999999;
+}
+
+.title-name3 {
+  background-color: #1aff1a;
+  color: #666666;
 }
 
 /*--------------------------------------------------------------

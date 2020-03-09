@@ -48,15 +48,20 @@
                             break;
                     }
                     $array = ["Luna","Eddy","Derick","Maybell"];
-                    $texte =  "<div class='title-name'>" . $array[$compte] . "</div>";;
+                    $style = "title-name title-name" . $compte;
+                    $texte =  "<div class=' . $style . '>" . $array[$compte] . "</div>";
+                    $lunch = "<div class=' . $style . '>" . $array[$compte] . "</div>";
                     if($compte <= 3){
                         echo $texte;
+                      
                     }
                     $compte ++;
                     $couleur = $couleur + 10;
-                    $position = "grid-column-start:" . $position;
+                    $gridEnd = $subtr + 2;
+                    $position = "grid-column-start:" . $position . ";";
+                    $gridEnd = "grid-row-end:" . $gridEnd;
                     $heure = "grid-row-start:" . $subtr . ";";
-					?><div style='<?php echo $heure .  $position ?>' class = "structure-atelier">
+					?><div style='<?php echo $heure .  $position . $gridEnd ?>' class = "structure-atelier">
                         <?php
                             //echo '<p class="p-tittle"><a href="'.get_permalink( $id ).'">' . get_the_title() . "___" . "<span class='span-1'>" . get_post_field('post_name') . "</span>" . "___" . "<span class='span-2'>" . get_the_author_meta( 'display_name', $post->post_author )   . "</span>" . '</a></p>';
                             echo "<p>" . get_the_title() . "</p>";

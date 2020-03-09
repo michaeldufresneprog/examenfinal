@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<h1 class="container">Nos événements important cette année</h1>
+<h1 class="container"></h1>
 <section class="container section-nouvelle">
         <?php
         $query = new WP_Query( array( 'category_name' => "atelier",

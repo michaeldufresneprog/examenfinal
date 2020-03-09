@@ -9,6 +9,7 @@
         'order' => 'ASC'
         ));
         if ( $query->have_posts() ) {
+            $compte = 0;
             while ( $query->have_posts() ) {
                     $query->the_post();
                     $heure = get_post_field('post_name');
@@ -45,6 +46,12 @@
                             $subtr = 9;
                             break;
                     }
+                    $array = ["Luna","Eddy","Derick","Maybell"];
+                    $texte =  "<div class='title-name'>" . $array[$compte] . "</div>";;
+                    if($compte <= 4){
+                        echo $texte;
+                    }
+                    $compte ++;
                     $position = "grid-column-start:" . $position;
                     $heure = "grid-row-start:" . $subtr . ";";
 					?><div style='<?php echo $heure .  $position ?>' class = "structure-atelier">

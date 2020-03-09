@@ -149,6 +149,8 @@ a {
   display: grid;
   -ms-grid-columns: (25% [col-start])[4];
       grid-template-columns: repeat(4, 25% [col-start]);
+  -ms-grid-rows: (25% [col-start])[10];
+      grid-template-rows: repeat(10, 25% [col-start]);
 }
 
 /*--------------------------------------------------------------

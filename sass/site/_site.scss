@@ -52,4 +52,5 @@ a{
 .section-nouvelle{
     display: grid;
     grid-template-columns: repeat(4, 25% [col-start]);
+    grid-template-rows: repeat(10, 25% [col-start]);
 }

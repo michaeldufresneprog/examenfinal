@@ -153,6 +153,12 @@ a {
       grid-template-rows: repeat(10, 25% [col-start]);
 }
 
+.structure-atelier {
+  border: 2px solid black;
+  text-align: left;
+  padding-left: 10px;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/

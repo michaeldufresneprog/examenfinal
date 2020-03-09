@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <p class='container'>Git,Sass,Grid,Thème WP</p>
 <h1 class="container"></h1>
+<h1 class='container tittle-des'><?php the_archive_description() ?></h1>
 <section class="container section-nouvelle">
         <?php
         $query = new WP_Query( array( 'category_name' => "atelier",
